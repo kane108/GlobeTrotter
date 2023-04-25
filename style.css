@@ -6,7 +6,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
 }
 body{
     background-color: rgb(243, 243, 243);
@@ -17,6 +16,9 @@ a{
 }
 ul{
     list-style: none;
+}
+button:hover{
+    cursor: pointer;
 }
 .container{
     padding-left: 3rem;
@@ -29,9 +31,10 @@ header{
     width: 100%;
     justify-content: space-between;
     background-color: white;
-    padding: 30px 2%;
+    padding: 20px 2%;
     align-items: center;
     top: 0;
+    z-index: 1000;
 }
 nav ul{
     display: flex;
@@ -130,6 +133,7 @@ form button{
 }
 form button:hover{
     cursor: pointer;
+    background-color: #2f9caf;
 }
 .forms{
     margin-top: 7rem;
@@ -149,27 +153,218 @@ form button:hover{
 .destinationtop{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .destinationtop h1{
     margin-top: 7rem;
 }
+.destinationtop p{
+    margin-top: 1rem;
+}
+.destopbt{
+    margin-right: 5rem;
+    margin-top: 7rem;
+}
+.destopbt button{
+    padding: 1rem 1rem;
+    border: none;
+    background-color: white;
+    border-radius: 0.8rem;
+    transition: all 0.2s;
+}
+.destopbt button:hover{
+    background-color: #2292a7;
+    color: white;
+    cursor: pointer;
+}
+.destcards{
+    margin-top: 4rem;
+    display: flex;
+}
 .destination img{
-    width: 30%;
+    width: 85%;
+    border-radius: 0.5rem;
+}
+.destcards i{
+    color: blue;
+}
+.destcards button{
+    background-color: #2292a7;
+    border-radius: 0.8rem;
+    border: none;
+    padding: 0 1rem;
+    color: white;
 }
 
 
-.deals img{
-    width: 30%;
+.deals h3{
+    color:rgb(255, 213, 0) ;
+    padding-top: 5rem;
+    font-size: 0.8rem;
+}
+.deals h1{
+    margin-top: 2rem;
+
+}
+.deals{
+    min-height: 150vh;
+}
+.uno, .dos, .tres{
+    display: flex;
+    text-align: center;
+    padding: 0.7rem 1rem;
+    width: 3.5%;
+    color: white;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.uno{
+    background-color: blueviolet;
+}
+.dos{
+    background-color: #2292a7;
+}
+.tres{
+    background-color: rgb(255, 213, 0);
+}
+.deals h2{
+    margin-top: 1rem;
+}
+
+.dealsbot img{
+position: absolute;
+width: 32%;
+top: 250%;
+left: 55%;
+border-radius: 1rem;
+border: solid 0.4rem white;
+}
+.dealsbot button{
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.7rem;
+    background-color: #2292a7;
+    color: white;
+}
+
+.cameradivs img{
+    width: 10%;
+    margin-top: 30rem;
 }
 
 
 .aboutus img{
-    width: 30%;
+    width: 20%;
+    border-radius: 1rem;
+    border: solid 0.5rem white;
+}
+.aboutop{
+    display: flex;
+
+}
+.aboutimgs{
+    position: absolute;
+}
+.aboutimgf{
+    position: absolute;
+    left: 20%;
+    top: 350%;
+}
+.aboutext{
+    margin-left: 50rem;
+    width: 100%;
+}
+.aboutext button{
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #2292a7;
+    color: white;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+}
+.aboutextbot{
+    display: flex;
+}
+
+.seewhy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20%;
+}
+.seewhy div{
+    margin-right: 5rem;
+}
+.seewhy button{
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: white;
+    transition: all 0.3s;
+    margin-left: 1rem;
+}
+.seewhy button:hover{
+    color: white;
+    background-color: #2292a7;
+    cursor: pointer;
+}
+.seewhydiv img{
+    border: none;
+}
+.seewhybot{
+    display: flex;
+    justify-content: space-around;
 }
 
 
+
+.contactus{
+    background-color: white;
+    height: 100vh;
+}
 .contactus img{
-    width: 30%;
+    position: absolute;
+    left: 45%;
+    width: 50%;
+}
+.input-button-container button {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    height: 80%;
+    background-color: #2292a7;
+    padding: 0 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    color: white;
+}
+.input-button-container {
+    display: inline-block;
+    position: relative;
+}
+
+.prepare{
+    background-color: #2292a7;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 0.6rem;
+    height: 35vh;
+}
+.preparebtn{
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color:rgb(255, 213, 0) ;
+    color: white;
+    font-weight: 600;
 }
 
 
+footer{
+    display: flex;
+    height: 25vh;
+    justify-content: space-around;
+    margin-top: 5%;
+}
